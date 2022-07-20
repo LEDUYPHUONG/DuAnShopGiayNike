@@ -73,7 +73,7 @@ $text-shadow-primary: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 #btnSubmit{
     @include button($fw-md, $fs-mdl, $lh-mdl, 12px 85px, $bg-button-submit, $text-color-3rd, none);
-   margin-left: 130%;
+   margin-left: 10px;
 }
 
 
@@ -124,7 +124,7 @@ background-color: $bg-color-2nd;
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    width: 45%;
+    width: 100%;
 }
 label{
     padding-right: 10px;

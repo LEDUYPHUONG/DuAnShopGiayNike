@@ -86,32 +86,21 @@
                 <div class="title-register">
                     <p class="text-center">Register</p>
                 </div>
-                <form action="" class="d-flex flex-wrap justify-content-between align-item-center">
-                    <div class="inputcol input-email col col-md-5">
-                        <div class="input-top d-flex justify-content-between align-item-center">
-                            <div class="d-flex justify-content-between align-item-center w-100">
-                                <label>email</label>
-                                <input class="p-1" type="email" value=""  required>
-                            </div>
-                            <span class="spanAfter">(*)</span>
-                        </div>
-                        <div>
-                            <span class="spanEmail"></span>
-                        </div>
+                <form action="" class="row">
+                  <div class="col col-md-6">
+                    <div class="inputcol input-email col">
+                      <div class="input-top d-flex justify-content-between align-item-center">
+                          <div class="d-flex justify-content-between align-item-center w-100">
+                              <label>email</label>
+                              <input class="p-1" type="email" value=""  required>
+                          </div>
+                          <span class="spanAfter">(*)</span>
+                      </div>
+                      <div>
+                          <span class="spanEmail"></span>
+                      </div>
                     </div>
-                    <div class="inputcol input-name col col-md-5">
-                        <div class="input-top d-flex justify-content-between align-item-center">
-                            <div class="d-flex justify-content-between align-item-center w-100">
-                                <label>name</label>
-                                <input class="p-1" type="text" value=""  required>
-                            </div>
-                            <span class="spanAfter">(*)</span>
-                        </div>
-                        <div>
-                            <span class="spanName"></span>
-                        </div>
-                    </div>
-                    <div class="inputcol input-password col col-md-5">
+                    <div class="inputcol input-password col">
                         <div class="input-top d-flex justify-content-between align-item-center">
                             <div class="d-flex justify-content-between align-item-center w-100">
                                 <label>password</label>
@@ -123,31 +112,45 @@
                             <span class="spanPassword"></span>
                         </div>
                     </div>
-                    <div class="inputcol input-phone col col-md-5">
-                        <div class="input-top d-flex justify-content-between align-item-center">
-                            <div class="d-flex justify-content-between align-item-center w-100">
-                                <label>phone</label>
-                                <input class="p-1" type="text" value=""  required>
-                            </div>
-                            <span class="spanAfter">(*)</span>
-                        </div>
-                        <div>
-                            <span class="spanPhone"></span>
-                        </div>
+                    <div class="inputcol input-confirm col">
+                      <div class="input-top d-flex justify-content-between align-item-center">
+                          <div class="d-flex justify-content-between align-item-center">
+                              <label>password confirm</label>
+                              <input class="p-1" type="password" value="" required>
+                          </div>
+                          <span class="spanAfter">(*)</span>
+                      </div>
+                      <div>
+                          <span class="spanConfirm"></span>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col col-md-6">
+                    <div class="inputcol input-name col">
+                      <div class="input-top d-flex justify-content-between align-item-center">
+                          <div class="d-flex justify-content-between align-item-center w-100">
+                              <label>name</label>
+                              <input class="p-1" type="text" value=""  required>
+                          </div>
+                          <span class="spanAfter">(*)</span>
+                      </div>
+                      <div>
+                          <span class="spanName"></span>
+                      </div>
                     </div>
-                    <div class="inputcol input-confirm col col-md-5">
-                        <div class="input-top d-flex justify-content-between align-item-center">
-                            <div class="d-flex justify-content-between align-item-center">
-                                <label>password confirm</label>
-                                <input class="p-1" type="password" value="" required>
-                            </div>
-                            <span class="spanAfter">(*)</span>
-                        </div>
-                        <div>
-                            <span class="spanConfirm"></span>
-                        </div>
+                    <div class="inputcol input-phone col">
+                      <div class="input-top d-flex justify-content-between align-item-center">
+                          <div class="d-flex justify-content-between align-item-center w-100">
+                              <label>phone</label>
+                              <input class="p-1" type="text" value=""  required>
+                          </div>
+                          <span class="spanAfter">(*)</span>
+                      </div>
+                      <div>
+                          <span class="spanPhone"></span>
+                      </div>
                     </div>
-                    <div class="inputcol input-gender col col-md-5">
+                    <div class="inputcol input-gender col">
                         <div class="input-top d-flex justify-content-between align-item-center">
                             <label>Gender</label>
                             <input type="radio" name="gender" value="true" required>
@@ -157,9 +160,11 @@
                         </div>
                         <span class="spanGender"></span>
                     </div>
-                    <div class="button-submit col col-md-5">
-                        <button id="btnSubmit" type="submit">Submit</button>
+                    <div class="button-submit col">
+                      <button id="btnSubmit" type="submit">Submit</button>
                     </div>
+                  </div>  
+                  
                 </form>
             </div>
         </div>
