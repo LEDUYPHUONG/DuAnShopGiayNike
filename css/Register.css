@@ -269,7 +269,8 @@ input :focus {
   background: #fafafa;
 }
 .Register .container .register-inner {
-  margin: 40px auto;
+  margin: 0 auto;
+  padding: 40px;
   max-width: 1000px;
 }
 .Register .container .register-inner .title-register p {
