@@ -129,6 +129,7 @@ background-color: $bg-color-2nd;
 label{
     padding-right: 10px;
     @include text($fw-md,$fs-mdl,$lh-mdl);
+    
 }
 input{
     border: none;
