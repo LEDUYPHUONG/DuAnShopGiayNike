@@ -1,0 +1,147 @@
+//background
+$bg-color-primary: #fff;
+$bg-color-2nd: #D9D9D9;
+$bg-color-3rd: #000;
+$bg-color-4th: #fafafa;
+$bg-color-5th: #ececec;
+$bg-color-6th: #ae18e2;
+$bg-color-7th: #fffcfc;
+$bg-color-8th: #f5f5f5;
+
+//button
+$bg-button: #F8B653;
+$bg-button-submit:#ae18e2;
+// navbar
+$color-navbar-underText: #9f9f9f;
+//carousel
+$color-button-carousel-indicators: #D9D9D9;
+$color-boder-button-carousel-indicators: #9a9a9a;
+
+// text
+$fw-sm: 300;
+$fw-md: 400;
+$fw-sB: 500;
+$fw-B: 700;
+
+$fs-ssm: 10px;
+$fs-sm: 16px;
+$fs-md: 20px;
+$fs-mdl: 30px;
+$fs-l: 40px;
+
+$lh-ssm: 15px;
+$lh-sm: 19px;
+$lh-md: 24px;
+$lh-mdl: 36.31px;
+$lh-l: 48px;
+
+$text-color-primary: #000;
+$text-color-2nd: #9a9a9a;
+$text-color-3rd: #fff;
+$text-color-4th: red;
+
+$text-shadow-primary: 0px 4px 4px rgba(0, 0, 0, 0.25);
+// carousel-control-prev + next
+@mixin control-icon-carousel-prev-next() {
+    width: 4rem;
+    height: 4rem;
+}
+
+@mixin text ($fw:$fw-sm,$fs:$fs-sm,$lh:$lh-sm) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+@mixin button-carousel-indicators($w:10px,$h:10px,$bg:$bg-color-2nd,$bd:$color-boder-button-carousel-indicators 1px solid,$bd-r:50%,$mg:0 10px) {
+    height: $w;
+    width: $h;
+    background: $bg;
+    border: $bd;
+    border-radius: $bd-r;
+    margin: $mg
+}
+
+@mixin button($fw:$fw-sm,$fs:$fs-md,$lh:$lh-md,$pd:13px 35px,$bg:$bg-button,$c:$text-color-3rd,$bd:none) {
+    @include text ($fw,$fs,$lh);
+    padding: $pd;
+    background: $bg;
+    color: $c;
+    border: $bd;
+}
+
+
+#btnSubmit{
+    @include button($fw-md, $fs-mdl, $lh-mdl, 12px 85px, $bg-button-submit, $text-color-3rd, none);
+   margin-left: 130%;
+}
+
+
+
+
+// navbar
+.nav-link-borderBottom{
+    border-bottom: 2px solid $color-navbar-underText;
+   
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 12px;
+}
+
+
+// sticky backtotop
+#myBtn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: none;
+    color: $text-color-2nd;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+  
+#myBtn:hover {
+background-color: $bg-color-2nd;
+}
+
+
+// form
+.inputcol{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 5px solid $bg-color-6th;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 45%;
+}
+label{
+    padding-right: 10px;
+    @include text($fw-md,$fs-mdl,$lh-mdl);
+}
+input{
+    border: none;
+    background: none;
+    width: 100%;
+    :focus{
+        outline-width: 0;
+    }
+}
+
+.spanAfter{
+    color:$text-color-4th;
+    @include text($fw-md,$fs-mdl,$lh-mdl);
+}
+
+

@@ -1,0 +1,26 @@
+@import '../Base/base';
+@import '../Base/reponsive';
+@import '../Theme/variable';
+
+
+.product-name{
+    
+    .container{
+        
+        .tbody-productName{
+            background-color: $bg-color-4th;
+            p{
+                
+            }
+        }
+    }
+}
+
+.realate-product{
+    .container{
+        .tbody-realateProduct{
+            background-color: $bg-color-4th;
+            
+        }
+    }
+}

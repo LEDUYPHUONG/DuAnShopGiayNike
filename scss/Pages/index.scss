@@ -1,0 +1,91 @@
+@import '../Base/base';
+@import '../Base/reponsive';
+@import '../Theme/variable';
+
+
+
+.carousel-out{
+    .container{
+        padding-bottom: 100px;
+        background: $bg-color-4th;
+        background-image: url(../img/carousel.png);
+        background-size: cover;
+        height: 435px;
+        // .carousel.slide{
+
+        // }
+        .carousel-indicators{
+            margin-bottom: 3rem;
+            button{
+                @include button-carousel-indicators ();
+            }
+        }
+        .carousel-inner{
+            .carousel-item{
+                .carousel-container{
+                    .carousel-product{
+                        padding-left: 86px;
+                        .overlay-image{
+                            opacity: 0.8;
+                        }
+                    }
+                    .carousel-infoProduct{
+                        padding-right: 85px;
+                        .infoProduct{
+                            h1{
+                                padding-bottom: 5px;
+                                @include text ($fw-sm,$fs-l,$lh-l);
+                            }
+                            h4{
+                                padding-bottom: 20px;
+                                @include text ($fw-sm,$fs-md,$lh-md);
+                            }
+                            button{
+                                margin-top: 10px;
+                                @include button;
+                            }
+                        }
+                    }
+                }
+            }
+            // .carousel-item.active{
+
+            // }
+        }
+        .carousel-control-prev{
+            width: 6%;
+            .carousel-control-prev-icon{
+                background-image: url(../img/prev.png);
+                @include control-icon-carousel-prev-next;
+                
+            }
+        }
+        .carousel-control-next{
+            width: 6%;
+            .carousel-control-next-icon{
+                background-image: url(../img/next.png);
+                @include control-icon-carousel-prev-next;
+            }
+        }
+
+    }
+
+}
+
+.Product-Feature{
+    .container{
+        .Product-Feature-inner{
+            background-color: $bg-color-primary;
+            h1{
+                text-align: center;
+                @include text ($fw-md,$fs-l,$lh-l);
+            }
+            .rendertable{
+                padding: 89px;
+            }
+        }
+    }
+}
+
+
+

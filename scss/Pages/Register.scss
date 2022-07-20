@@ -1,0 +1,22 @@
+@import '../Base/base';
+@import '../Base/reponsive';
+@import '../Theme/variable';
+
+.Register{
+    
+    .container{
+        background: $bg-color-4th ;
+        .register-inner{
+            margin: 40px auto;
+            max-width: 1000px;
+            
+            .title-register{
+                p{
+                    @include text($fw-md,$fs-l,$lh-l);
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
