@@ -1,5 +1,5 @@
 @import '../Base/base';
-// @import '../Base/reponsive';// để dưới cùng rồi
+@import '../Base/reponsive';// để dưới cùng rồi
 @import '../Theme/variable';
 
 
@@ -88,62 +88,12 @@
                 text-align: center;
                 @include text ($fw-md,$fs-l,$lh-l);
             }
-            #rendertable{
-                display: flex;
-                flex-flow: row wrap;
-                .rendertable-item{
-                    width: calc(100%/3);
-                    background-color: $bg-color-primary;
-                    padding-bottom: $margin-item-rendertable;
-                    .rendertable-item-inner{
-                        padding: $margin-item-rendertable;
-                        margin: $margin-item-rendertable;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        height: 100%;
-                        background-color: $bg-item-rendertable;
-                        .rendertable-item-inner-top{
-                            background: $bg-item-rendertable;
-                            img{
-                                max-width: 100%;
-                            }
-                        }
-                        .rendertable-item-inner-mid{
-                            background: $bg-item-rendertable;
-                            p{
-                                @include text($fw-sm,$fs-mds,$lh-mdm);
-                                padding: 10px 10px;
-                            }
-                            p{
-                                span{
-                                    @include text($fw-sm,$fs-mds,$lh-mdm);
-                                    color:$bg-color-11th;
-                                    box-sizing: border-box;
-                                }
-                            }
-                        }
-                        .rendertable-item-inner-bottom{
-                            display: flex;
-                            justify-content:space-around;
-                            margin: 0 -$margin-item-rendertable;
-                            button{
-                                width: 50%;
-                                @include button;
-                                border-radius: 0;
-                                color: $bg-color-3rd ;
-                            }
-                            .btn-gia{
-                                background: $bg-color-10th;
-                            }
-                        }
-                    }
-                }
-            }
+            // #rendertable{
+
+            // }
         }
     }
 }
 
 
 
-@import '../Base/reponsive';

@@ -362,6 +362,67 @@ header .container .header-inner .login span {
   line-height: 24px;
 }
 
+#rendertable {
+  display: flex;
+  flex-flow: row wrap;
+}
+#rendertable .rendertable-item {
+  width: 33.3333333333%;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+#rendertable .rendertable-item .rendertable-item-inner {
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #f8f8f8;
+}
+#rendertable .rendertable-item .rendertable-item-inner .rendertable-item-inner-top {
+  background: #f8f8f8;
+}
+#rendertable .rendertable-item .rendertable-item-inner .rendertable-item-inner-top img {
+  max-width: 100%;
+}
+#rendertable .rendertable-item .rendertable-item-inner .rendertable-item-inner-mid {
+  background: #f8f8f8;
+}
+#rendertable .rendertable-item .rendertable-item-inner .rendertable-item-inner-mid p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29.05px;
+  padding: 10px 10px;
+}
+#rendertable .rendertable-item .rendertable-item-inner .rendertable-item-inner-mid p span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29.05px;
+  color: #CBC9C9;
+  box-sizing: border-box;
+}
+#rendertable .rendertable-item .rendertable-item-inner .rendertable-item-inner-bottom {
+  display: flex;
+  justify-content: space-around;
+  margin: -30px;
+}
+#rendertable .rendertable-item .rendertable-item-inner .rendertable-item-inner-bottom button {
+  width: 50%;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 13px 35px;
+  background: #F8B653;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  color: #000;
+}
+#rendertable .rendertable-item .rendertable-item-inner .rendertable-item-inner-bottom .btn-gia {
+  background: #dedddc;
+}
+
 .footer .container .row-top {
   background-color: #fafafa;
   margin: 0 auto;
