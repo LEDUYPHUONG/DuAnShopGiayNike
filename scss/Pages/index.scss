@@ -1,5 +1,5 @@
 @import '../Base/base';
-@import '../Base/reponsive';
+// @import '../Base/reponsive';// để dưới cùng rồi
 @import '../Theme/variable';
 
 
@@ -80,8 +80,40 @@
                 text-align: center;
                 @include text ($fw-md,$fs-l,$lh-l);
             }
-            .rendertable{
-                padding: 89px;
+            #rendertable{
+                // chèn thêm mấy cái class trong htmlContent của main.js vào
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 0 auto;
+                .rendertable-item{
+                    width: calc(100%/3);
+                    margin: 0 -15px;
+                    .rendertable-item-inner{
+                        padding: 15px;
+                        margin: 0 15px;
+                        .rendertable-item-inner-top{
+                            background: red;
+                            img{
+                                max-width: 100%;
+                            }
+                            p{
+                                @include text($fw-sm,$fs-mds,$lh-mdm);
+                            }
+                        }
+                        .rendertable-item-inner-bottom{
+                            display: flex;
+                            justify-content:space-around;
+                            padding: 5px 0;
+                            button{
+                                @include button;
+                            }
+                        }
+                    }
+                }
+                
+                
             }
         }
     }
