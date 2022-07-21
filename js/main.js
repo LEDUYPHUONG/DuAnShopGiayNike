@@ -41,12 +41,14 @@ function renderDanhSachDoiTuong (arrDoiTuong,idBody){
             <div class="rendertable-item-inner"">
                 <div class="rendertable-item-inner-top">
                     <img src="${doiTuong.image}" alt="...">
+                </div>
+                <div class="rendertable-item-inner-mid">
                     <p>${doiTuong.alias}</p>
-                    <p>${doiTuong.shortDescription}</p>
+                    <p><span>${doiTuong.shortDescription}</span></p>
                 </div>
                 <div class="rendertable-item-inner-bottom">
                     <button class="btn btn-warning" onclick="muaDoiTuong('${doiTuong.id}')">Buy now</button>
-                    <button class="btn btn-secondary" type="button">${doiTuong.price}$</button>
+                    <button class="btn btn-secondary btn-gia" type="button">${doiTuong.price}$</button>
                 </div>
             </div>
         </div>
