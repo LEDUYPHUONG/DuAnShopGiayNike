@@ -23,39 +23,38 @@
         .carousel-inner{
             .carousel-item{
                 .carousel-container{
-                    .carousel-product{
-                        // padding-left: 86px;
-                        // justify-content: space-around;
-                        .overlay-image{
-                            opacity: 0.8;
-                            img{
-                                max-width: 100%;
+                    .rendertable-item-inner{
+                        display: flex;
+                        justify-content:flex-start;
+                        align-items: center;
+                        .carousel-product{
+                            padding-left: 80px;
+                            .overlay-image{
+
                             }
                         }
-                    }
-                    .carousel-infoProduct{
-                        // margin-right: -85px;
-                        .infoProduct{
-                            
-                            h1{
-                                padding-bottom: 5px;
-                                @include text ($fw-sm,$fs-l,$lh-l);
-                            }
-                            h4{
-                                padding-bottom: 20px;
-                                @include text ($fw-sm,$fs-md,$lh-md);
-                            }
-                            button{
-                                margin-top: 10px;
-                                @include button;
+                        .carousel-infoProduct{
+                            padding-left: 150px;
+                            .infoProduct{
+                        
+                                h1{
+                                    padding-bottom: 5px;
+                                    @include text ($fw-sm,$fs-l,$lh-l);
+                                }
+                                h4{
+                                    padding-bottom: 20px;
+                                    @include text ($fw-sm,$fs-md,$lh-md);
+                                }
+                                .btn-buyNow{
+                                    margin-top: 10px;
+                                    @include button;
+                                }
                             }
                         }
                     }
                 }
             }
-            // .carousel-item.active{
-
-            // }
+            
         }
         .carousel-control-prev{
             width: 6%;

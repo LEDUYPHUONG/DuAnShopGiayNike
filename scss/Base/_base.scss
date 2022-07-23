@@ -64,16 +64,7 @@ header{
             .container-fluid{
                 padding: 0;
                 margin: 0 auto;
-                // .navbar-brand{
-
-                // }
-                // .navbar-toggler{
-                //     .navbar-toggler-icon{
-
-                //     }
-                // }
                 .collapse{
-                    background-color: $bg-color-4th;
                     .navbar-nav{
                         .nav-item{
                             .nav-link{
@@ -85,6 +76,7 @@ header{
                         // }
                     }
                 }
+
             }
         }
     }
@@ -129,19 +121,102 @@ header{
                 display: flex;
                 justify-content:space-around;
                 margin: 0 -$margin-item-rendertable;
-                button{
+                .btn-buyNow{
                     width: 50%;
                     @include button;
+                    @include text ($fw-sB,$fs-mds,$lh-mdm);
                     border-radius: 0;
                     color: $bg-color-3rd ;
                 }
                 .btn-gia{
                     background: $bg-color-10th;
+                    width: 50%;
+                    text-align: center;
+                    @include text ($fw-sB,$fs-mds,$lh-lB);
                 }
             }
         }
     }
 }
+
+#tbody-productName{
+    .container_doituong{
+        margin: 0 auto;
+        padding: 58px 250px 39px 65px ;
+        background: $bg-color-primary;
+        .row{
+            display: flex;
+            flex-wrap: nowrap;
+            .img-doituong-out{
+                background-color: $bg-color-9th;
+                width: 334px;
+                height: 335px;
+                justify-content: center;
+                align-items: center;
+                margin-right: 128px;
+                .img-doituong-in{
+                    padding: 20px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .doituong-description{
+                background-color: $bg-color-primary;
+                width: 500px;
+                .doituong-name{
+                    h1{
+                        @include text ($fw-sm,$fs-mdl,$lh-mdl)
+                    }
+                    p{
+                        @include text ($fw-md,$fs-sm,$lh-sm)
+                    }
+                }
+                .doituong-size{
+                    h2{
+                        @include text ($fw-sB,$fs-mds,$lh-mdm) ;
+                        color: $text-color-6th;
+                    }
+                    p{
+                        @include text ($fw-md,$fs-sm,$lh-sm) ;
+                    }
+                }
+                .doituong-price{
+                    p{
+                        color: $text-color-5th ;
+                        margin-bottom: 20px;
+                        @include text ($fw-sB,$fs-mdl,$lh-mdl) ;
+                    }
+                }
+                .doituong-amount{
+                    margin-bottom: 25px;
+                    p{
+                        span{
+                            padding: 20px;
+                            
+                            background: $bg-linear-1 ;
+                        }
+                        .number-amount{
+                            background: $bg-color-primary;
+                            @include text ($fw-md,$fs-mdl,$lh-mdl) ;
+                            
+                        }
+                    }
+                }
+                .btn-addtocart{
+                    background: $bg-linear-2;
+                    border: none;
+                    border-radius: 0 ;
+                    p{
+                        @include text($fw-sB,$fs-mds,$fs-mdl);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 .footer{
     .container{

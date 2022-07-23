@@ -1,6 +1,6 @@
 //background
 $bg-color-primary: #fff;
-$bg-color-2nd: #D9D9D9;
+$bg-color-2nd: #d9d9d9;
 $bg-color-3rd: #000;
 $bg-color-4th: #fafafa;
 $bg-color-5th: #ececec;
@@ -11,6 +11,8 @@ $bg-color-9th: #f8f8f8;
 $bg-color-10th: #dedddc;
 $bg-color-11th: #CBC9C9;
 
+$bg-linear-1: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+$bg-linear-2: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
 //button
 $bg-button: #F8B653;
 $bg-button-submit:#ae18e2;
@@ -39,11 +41,14 @@ $lh-md: 24px;
 $lh-mdm: 29.05px;
 $lh-mdl: 36.31px;
 $lh-l: 48px;
+$lh-lB: 55px;
 
 $text-color-primary: #000;
 $text-color-2nd: #9a9a9a;
 $text-color-3rd: #fff;
 $text-color-4th: red;
+$text-color-5th: #FC0303;
+$text-color-6th: #1ED90E;
 
 $text-shadow-primary: 0px 4px 4px rgba(0, 0, 0, 0.25);
 

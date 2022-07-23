@@ -1,7 +1,7 @@
 @import '../Base/base';
 @import '../Base/reponsive';
 @import '../Theme/variable';
-@import '../Base/reponsive';
+
 
 
 .product-name{
@@ -10,9 +10,6 @@
         
         .tbody-productName{
             background-color: $bg-color-4th;
-            // p{
-                
-            // }
         }
     }
 }

@@ -37,7 +37,7 @@
 }
 
 #myBtn:hover {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .inputcol {
@@ -256,7 +256,7 @@ input :focus {
 }
 
 #myBtn:hover {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .inputcol {
@@ -353,9 +353,6 @@ header .container .header-inner .login span {
   padding: 0;
   margin: 0 auto;
 }
-.menu .container .navbar .container-fluid .collapse {
-  background-color: #fafafa;
-}
 .menu .container .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   font-weight: 400;
   font-size: 20px;
@@ -407,7 +404,7 @@ header .container .header-inner .login span {
   justify-content: space-around;
   margin: -30px;
 }
-#rendertable .rendertable-item .rendertable-item-inner .rendertable-item-inner-bottom button {
+#rendertable .rendertable-item .rendertable-item-inner .rendertable-item-inner-bottom .btn-buyNow {
   width: 50%;
   font-weight: 300;
   font-size: 20px;
@@ -416,11 +413,98 @@ header .container .header-inner .login span {
   background: #F8B653;
   color: #fff;
   border: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.05px;
   border-radius: 0;
   color: #000;
 }
 #rendertable .rendertable-item .rendertable-item-inner .rendertable-item-inner-bottom .btn-gia {
   background: #dedddc;
+  width: 50%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 55px;
+}
+
+#tbody-productName .container_doituong {
+  margin: 0 auto;
+  padding: 58px 250px 39px 65px;
+  background: #fff;
+}
+#tbody-productName .container_doituong .row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#tbody-productName .container_doituong .row .img-doituong-out {
+  background-color: #f8f8f8;
+  width: 334px;
+  height: 335px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 128px;
+}
+#tbody-productName .container_doituong .row .img-doituong-out .img-doituong-in {
+  padding: 20px;
+}
+#tbody-productName .container_doituong .row .img-doituong-out .img-doituong-in img {
+  width: 100%;
+}
+#tbody-productName .container_doituong .row .doituong-description {
+  background-color: #fff;
+  width: 500px;
+}
+#tbody-productName .container_doituong .row .doituong-description .doituong-name h1 {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36.31px;
+}
+#tbody-productName .container_doituong .row .doituong-description .doituong-name p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+#tbody-productName .container_doituong .row .doituong-description .doituong-size h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.05px;
+  color: #1ED90E;
+}
+#tbody-productName .container_doituong .row .doituong-description .doituong-size p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+#tbody-productName .container_doituong .row .doituong-description .doituong-price p {
+  color: #FC0303;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36.31px;
+}
+#tbody-productName .container_doituong .row .doituong-description .doituong-amount {
+  margin-bottom: 25px;
+}
+#tbody-productName .container_doituong .row .doituong-description .doituong-amount p span {
+  padding: 20px;
+  background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+}
+#tbody-productName .container_doituong .row .doituong-description .doituong-amount p .number-amount {
+  background: #fff;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36.31px;
+}
+#tbody-productName .container_doituong .row .doituong-description .btn-addtocart {
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  border: none;
+  border-radius: 0;
+}
+#tbody-productName .container_doituong .row .doituong-description .btn-addtocart p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .footer .container .row-top {
@@ -507,7 +591,7 @@ header .container .header-inner .login span {
 }
 
 #myBtn:hover {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .inputcol {
@@ -726,7 +810,7 @@ input :focus {
 }
 
 #myBtn:hover {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .inputcol {
