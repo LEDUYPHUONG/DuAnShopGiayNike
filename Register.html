@@ -92,7 +92,7 @@
                       <div class="input-top d-flex justify-content-between align-item-center">
                           <div class="d-flex justify-content-between align-item-center w-100">
                               <label>email</label>
-                              <input class="p-1" type="email" value=""  required>
+                              <input id="email" class="p-1" type="email" value=""  required>
                           </div>
                           <span class="spanAfter">(*)</span>
                       </div>
@@ -104,7 +104,7 @@
                         <div class="input-top d-flex justify-content-between align-item-center">
                             <div class="d-flex justify-content-between align-item-center w-100">
                                 <label>password</label>
-                                <input class="p-1" type="password" value=""  required>
+                                <input id="password"class="p-1" type="password" value=""  required>
                             </div>
                             <span class="spanAfter">(*)</span>
                         </div>
@@ -116,7 +116,7 @@
                       <div class="input-top d-flex justify-content-between align-item-center">
                           <div class="d-flex justify-content-start align-item-center w-100">
                               <label>password confirm</label>
-                              <input type="password" value="" required>
+                              <input id="passwordConfirm" type="password" value="" required>
                           </div>
                           <span class="spanAfter">(*)</span>
                       </div>
@@ -130,7 +130,7 @@
                       <div class="input-top d-flex justify-content-between align-item-center">
                           <div class="d-flex justify-content-between align-item-center w-100">
                               <label>name</label>
-                              <input class="p-1" type="text" value=""  required>
+                              <input id="name" class="p-1" type="text" value=""  required>
                           </div>
                           <span class="spanAfter">(*)</span>
                       </div>
@@ -142,7 +142,7 @@
                       <div class="input-top d-flex justify-content-between align-item-center">
                           <div class="d-flex justify-content-between align-item-center w-100">
                               <label>phone</label>
-                              <input class="p-1" type="text" value=""  required>
+                              <input id="phone" class="p-1" type="text" value=""  required>
                           </div>
                           <span class="spanAfter">(*)</span>
                       </div>
@@ -151,7 +151,7 @@
                       </div>
                     </div>
                     <div class="inputcol input-gender col">
-                        <div class="input-top d-flex justify-content-between align-item-center">
+                        <div id="gender" class="input-top d-flex justify-content-between align-item-center">
                             <label>Gender</label>
                             <input type="radio" name="gender" value="true" required>
                             <label for="">Male</label>
@@ -161,7 +161,7 @@
                         <span class="spanGender"></span>
                     </div>
                     <div class="button-submit col">
-                      <button id="btnSubmit" type="submit">Submit</button>
+                      <button id="btnSubmit">Submit</button>
                     </div>
                   </div>  
                   
@@ -239,36 +239,23 @@
           </div>
         </div>
       </div>
-      <div class="sticky-backToTop" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+      <div class="sticky-backToTop"  id="myBtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 
       
-      <!-- JS cho sticky backtotop -->
-      <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
-        
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-        
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-        </script>
+      
     <!-- jquery -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
+      integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script type="module" src="./js/register.js"></script>
   </body>
 </html>

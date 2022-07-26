@@ -1,5 +1,5 @@
 @import '../Base/base';
-@import '../Base/reponsive';
+// @import '../Base/reponsive';//để dưới cùng rồi
 @import '../Theme/variable';
 
 
@@ -23,3 +23,4 @@
     }
 }
 
+@import '../Base/reponsive';

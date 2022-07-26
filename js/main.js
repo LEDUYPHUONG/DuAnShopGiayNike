@@ -1,23 +1,9 @@
-// back to top
-var mybutton = document.getElementById("myBtn");
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-    } else {
-    mybutton.style.display = "none";
-    }
-}
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
+import '../js/backToTop.js'
 // js for index.html
 
 function getDanhSachDoiTuong(){
 
-    var promise = axios ({
+    let promise = axios ({
         url:'https://shop.cyberlearn.vn/api/Product',
         method:'GET',
     });
@@ -32,9 +18,9 @@ function getDanhSachDoiTuong(){
 
 
 function renderDanhSachDoiTuong (arrDoiTuong,idBody){
-    var htmlContent = '';
-    for (var index = 0; index < arrDoiTuong.length; index ++) {
-        var doiTuong = arrDoiTuong[index];
+    let htmlContent = '';
+    for (let index = 0; index < arrDoiTuong.length; index ++) {
+        let doiTuong = arrDoiTuong[index];
         // console.log(doiTuong)
 
         htmlContent += `
@@ -59,10 +45,10 @@ function renderDanhSachDoiTuong (arrDoiTuong,idBody){
 }
 
 function renderDanhSachDoiTuongCarousel (arrDoiTuong,idBodyCarousel,idBodyIndicators){
-    var htmlContent = '';
-    var htmlContentIndicators = '';
-    for (var index = 0; index < arrDoiTuong.length; index ++) {
-        var doiTuong = arrDoiTuong[index];
+    let htmlContent = '';
+    let htmlContentIndicators = '';
+    for (let index = 0; index < arrDoiTuong.length; index ++) {
+        let doiTuong = arrDoiTuong[index];
         // console.log(doiTuong)
         if(doiTuong === arrDoiTuong[0]){
             htmlContent += `
@@ -124,7 +110,7 @@ function renderDanhSachDoiTuongCarousel (arrDoiTuong,idBodyCarousel,idBodyIndica
 
 function getDoiTuong(){
 
-    var promise = axios ({
+    let promise = axios ({
         url:'https://shop.cyberlearn.vn/api/Product/getbyid?id=' + myParam,
         method:'GET',
     });
@@ -137,8 +123,9 @@ function getDoiTuong(){
 }
 
 
-function renderDoiTuong (doiTuong,idBodyDT){
-    var htmlContentDT = '' + `
+function renderDoiTuong (doiTuong,idBodyDT){ 
+    
+    let htmlContentDT = `
         <div class="container_doituong">
             <div class="row">
                 <div class="img-doituong-out">
@@ -153,22 +140,38 @@ function renderDoiTuong (doiTuong,idBodyDT){
                     </div>
                     <div class="doituong-size">
                         <h2>Available size</h2>
-                        <p>${doiTuong.size}</p>
+                        <p id= "BtnSizeGiay"></p>
                     </div>
                     <div class="doituong-price">
                         <p>${doiTuong.price}$</p>
                     </div>
                     <div class="doituong-amount">
-                        <p> <span>+</span> <span class="number-amount">1</span> <span>+</span> </p>
+                        <p> <span class="iconAmount">-</span> <span class="number-amount">1</span> <span class="iconAmount">+</span> </p>
                     </div>
                     <button class="btn-addtocart btn"><p>Add to cart</p></button>
                 </div>
             </div>
         </div>
-        `
+    `
     document.getElementById(idBodyDT).innerHTML = htmlContentDT;
-}
+    
 
+    // add các button size giày vô trong <p id= "BtnSizeGiay"></p>
+   
+    console.log(doiTuong.size);
+    let htmlBtnSizeGiay = '';
+        for(let index = 0; index < doiTuong.size.length; index ++){
+            // <button class="btn btn-dark text-white"></button>
+            htmlBtnSizeGiay += `
+            <button class="btn btn-dark text-white">${doiTuong.size[index]}</button>
+            `
+        }
+
+    document.getElementById('BtnSizeGiay').innerHTML = htmlBtnSizeGiay;
+
+
+    
+}
 
 // windowonlad, xài chung cho cả js index.html và detail.html
 window.onload = function (){

@@ -56,9 +56,12 @@ header{
         }
     }
 }
-
+.bg-light{
+    background: $bg-color-primary !important;
+}
 .menu{
     .container{
+        
         .navbar{
             padding: 0;
             .container-fluid{
@@ -176,6 +179,7 @@ header{
                     h2{
                         @include text ($fw-sB,$fs-mds,$lh-mdm) ;
                         color: $text-color-6th;
+                        margin-bottom: 10px
                     }
                     p{
                         @include text ($fw-md,$fs-sm,$lh-sm) ;
@@ -185,21 +189,23 @@ header{
                     p{
                         color: $text-color-5th ;
                         margin-bottom: 20px;
+                        margin-top: 10px;
                         @include text ($fw-sB,$fs-mdl,$lh-mdl) ;
                     }
                 }
                 .doituong-amount{
                     margin-bottom: 25px;
                     p{
-                        span{
+                        
+                        .iconAmount{
                             padding: 20px;
-                            
+                            cursor: pointer;
                             background: $bg-linear-1 ;
                         }
                         .number-amount{
                             background: $bg-color-primary;
                             @include text ($fw-md,$fs-mdl,$lh-mdl) ;
-                            
+                           padding: 20px;                        
                         }
                     }
                 }

@@ -148,12 +148,14 @@ background-color: $bg-color-2nd;
 label{
     padding-right: 10px;
     @include text($fw-md,$fs-mdl,$lh-mdl);
-    
+    white-space: nowrap;
+
 }
 input{
     border: none;
     background: none;
     width: 100%;
+    padding-left: 2px;
     :focus{
         outline-width: 0;
     }

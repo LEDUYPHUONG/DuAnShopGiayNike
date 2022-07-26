@@ -1,5 +1,5 @@
 @import '../Base/base';
-@import '../Base/reponsive';
+// @import '../Base/reponsive';//để dưới cùng rồi
 @import '../Theme/variable';
 
 
@@ -11,14 +11,29 @@
             margin: 0 auto;
             padding: 40px;
             max-width: 1000px;
-            
+          
             .title-register{
                 p{
                     @include text($fw-md,$fs-l,$lh-l);
                     padding-bottom: 50px;
                 }
             }
+            // form{
+            //     .col{
+            //         .inputcol{
+            //             .input-top{
+            //                 div{
+            //                     input{
+            //                       background: red;
+                                    
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
         }
     }
 }
 
+@import '../Base/reponsive';

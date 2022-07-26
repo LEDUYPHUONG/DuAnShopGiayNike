@@ -52,54 +52,62 @@
     }
     .container{
         
-        // .carousel-indicators{
+        .carousel-indicators{
             
-        //     button{
-                
-        //     }
-        // }
+            button{
+                @media (max-width: 991px){
+                        margin: 0 3px;
+                }
+            }
+        }
         .carousel-inner{
             .carousel-item{
                 .carousel-container{
-                    @media (max-width: 991px){
-                        display: block !important;
-                        justify-content: center;
-                        align-items:flex-end;
-                    }
-                    .carousel-product{
-                        @media (max-width: 1199px){
-                        max-width: 60%;
-                        padding-left: 0;
-                        margin: 0 auto;
+                    
+                    .rendertable-item-inner{
+                        @media (max-width: 991px){
+                            display: block !important;
+                            justify-content: center;
+                            align-items:flex-end;
                         }
-                        @media (max-width: 767px){
-                            max-width: 100%;
-                            margin-left: 30%;
-                        }
-                        .overlay-image{
+                        .carousel-product{
+                            @media (max-width: 1199px){
+                            max-width: 60%;
+                            padding-left: 0;
+                            margin: 0 auto;
+                            }
                             @media (max-width: 767px){
                                 max-width: 100%;
+                                text-align: center;
+                            }
+                            .overlay-image{
+                                @media (max-width: 767px){
+                                    width: 80%;
+                                    
+                                }
                             }
                         }
-                    }
-                    .carousel-infoProduct{
-                        @media (max-width: 991px){
-                        padding-right: 0;
-                        text-align: center;
-                        padding-bottom: 100px;
+                        .carousel-infoProduct{
+                            @media (max-width: 1200px){
+                            padding-right: 0;
+                            text-align: center;
+                            padding-bottom: 100px;
+                            padding-left: 0;
+                            }
+                            // .infoProduct{
+                            //     h1{
+                                    
+                            //     }
+                            //     h4{
+                                    
+                            //     }
+                            //     button{
+                                    
+                            //     }
+                            // }
                         }
-                        // .infoProduct{
-                        //     h1{
-                                
-                        //     }
-                        //     h4{
-                                
-                        //     }
-                        //     button{
-                                
-                        //     }
-                        // }
                     }
+                    
                 }
             }
             // .carousel-item.active{
@@ -124,20 +132,30 @@
 
 }
 
-// .Product-Feature{
+.Product-Feature{
     
-//     .container{
-//         .Product-Feature-inner{
+    .container{
+        .Product-Feature-inner{
             
-//             h1{
+            // h1{
                 
-//             }
-//             .rendertable{
-                
-//             }
-//         }
-//     }
-// }
+            // }
+            #rendertable{
+                .rendertable-item{
+                    @media (max-width: 1199px){
+                        width: 50%;
+                    }
+                    @media (max-width: 991px){
+                        width: 100%;
+                    }
+                    // .rendertable-item-inner{
+                        
+                    // }
+                }   
+            }
+        }
+    }
+}
 
 .footer{
     .container{
