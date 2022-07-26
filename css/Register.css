@@ -676,6 +676,11 @@ input :focus {
   padding-bottom: 50px;
 }
 
+#input-gender {
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+
 #btnSubmit {
   font-weight: 400;
   font-size: 30px;
